@@ -12,11 +12,11 @@ In this mini-project, you will work with a group to add routes to an existing ap
 
 ## Acceptance Criteria
 
-* It's done when I have created a wildcard route in `server.js` that will send the users to a 404 page.
+<!-- * It's done when I have created a wildcard route in `server.js` that will send the users to a 404 page. -->
 
-* It's done when I have created a custom `404.html` page for my wildcard route to serve.
+<!-- * It's done when I have created a custom `404.html` page for my wildcard route to serve. -->
 
-* It's done when I have created a POST route for `/api/diagnostics` that will store information about the invalid form submissions.
+<!-- * It's done when I have created a POST route for `/api/diagnostics` that will store information about the invalid form submissions. -->
 
 * It's done when I have created a GET route for `/api/diagnostics` that will return the content of `db/diagnostics/json`.
 

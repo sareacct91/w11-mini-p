@@ -4,7 +4,7 @@ const { readAndAppend, readFromFile } = require('../helpers/fsUtils');
 
 // GET Route for retrieving all the feedback
 fb.get('/', (req, res) =>
-  readFromFile('./db/feedback.json').then((data) => res.json(JSON.parse(data)))
+  readFromFile('./db/feedback.json').then((data) => res.json(data))
 );
 
 // POST Route for submitting feedback
