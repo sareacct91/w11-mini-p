@@ -129,7 +129,7 @@ const submitDiagnostics = (submissionObj) => {
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify(submissionObj.error),
+    body: JSON.stringify(submissionObj.errors),
   })
 };
 

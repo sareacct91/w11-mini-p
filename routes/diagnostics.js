@@ -13,8 +13,9 @@ diagnostics.post('/', (req, res) => {
   // TODO: Logic for appending data to the db/diagnostics.json file
   const { tip, topic, username } = req.body;
 
+
   const newData = {
-    time: Date.now,
+    time: Date.now(),
     error_id: uuidv4(),
     errors: {
       tip,
@@ -25,7 +26,7 @@ diagnostics.post('/', (req, res) => {
 
   readAndAppend(newData, './db/diagnostics.json');
 
-  res.send(200).json({ msg: 'successfully logged diagnostics' });
+  res.status(200).json({ msg: 'successfully logged diagnostics' });
 });
 
 module.exports = diagnostics;
